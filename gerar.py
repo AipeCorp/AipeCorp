@@ -31,6 +31,7 @@ INFO = [
     ("titulo", "Contato"),
     ("Site", "aipecorp.com"),
     ("GitHub", "github.com/AipeCorp"),
+    ("WhatsApp", "+55 31 9938-2020"),
 ]
 
 STACK = [("TypeScript", "#3178c6"), ("Next.js", None), ("NestJS", "#e0234e"), ("PostgreSQL", "#336791"),
@@ -145,7 +146,7 @@ def info(t):
                 f'<tspan fill="{t["chave"]}">. {escape(chave)}: </tspan>'
                 f'<tspan fill="{t["ponto"]}">{"." * pontos}</tspan>'
                 f'<tspan fill="{t["tinta"]}"> {escape(valor)}</tspan></text>')
-        y += 19
+        y += 18
     return caixa(296, 106, 504, 280, t, "".join(partes))
 
 
